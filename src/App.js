@@ -1,9 +1,17 @@
+import { Route, Routes } from "react-router-dom";
+
+import LandingPage from "./pages/LandingPage";
+import NavBar from "./components/NavBar.js";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <p className="text-xl font-bold underline">Hello world!</p>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<LandingPage />} exact />
+      </Routes>
     </div>
   );
 }
