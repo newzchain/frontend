@@ -1,6 +1,7 @@
 import React from "react";
 import NewsCard from "../components/NewsCard";
 import ArticleCard from "../components/ArticleCard.js";
+import SubscribeComp from "../components/SubscribeComp.js";
 
 const LandingPage = () => {
   const news = [
@@ -33,11 +34,14 @@ const LandingPage = () => {
 
   return (
     <>
-      <div className="flex flex-col mt-4 mb-8">
+      <div className="flex flex-col pt-24 pb-8 md:px-8 px-0">
         <div className="news_cards">
-          <h1 className="text-2xl font-semibold md:text-left mx-8 xs:text-center">
-            Trending News
-          </h1>
+          <div className="flex flex-row">
+            <h1 className="text-2xl font-semibold md:text-left ml-8 mr-5 xs:text-center">
+              Trending News
+            </h1>
+            <hr className="flex-grow mt-4 mr-8 bg-black h-1" />
+          </div>
           <div className="grid md:grid-cols-4 grid-cols-1 mx-8 md:gap-8 xs:gap-2">
             {news.map((article) => {
               return (
@@ -56,7 +60,7 @@ const LandingPage = () => {
               <h1 className="text-2xl md:text-left font-semibold mb-2 text-center">
                 Markets
               </h1>
-              <hr className="" />
+              <hr className="bg-black h-1" />
               <ArticleCard />
               <ArticleCard />
               <ArticleCard />
@@ -65,12 +69,34 @@ const LandingPage = () => {
               <h1 className="text-2xl md:text-left text-center font-semibold mb-2">
                 Top Articles
               </h1>
-              <hr />
+              <hr className="bg-black h-1" />
               <ArticleCard />
               <ArticleCard />
               <ArticleCard />
             </div>
           </div>
+        </div>
+        <div className="news_cards mt-4">
+          <div className="flex flex-row">
+            <h1 className="text-2xl font-semibold md:text-left ml-8 mr-5 xs:text-center">
+              Newschain Money
+            </h1>
+            <hr className="flex-grow mt-4 mr-8 bg-black h-1" />
+          </div>
+          <div className="grid md:grid-cols-4 grid-cols-1 mx-8 md:gap-8 xs:gap-2">
+            {news.map((article) => {
+              return (
+                <NewsCard
+                  title={article.title}
+                  description={article.description}
+                  img={article.img}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className="subscribe_us">
+          <SubscribeComp />
         </div>
       </div>
     </>

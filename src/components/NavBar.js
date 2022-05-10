@@ -14,8 +14,14 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="w-full top-0 left-0 shadow">
-        <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
+      <div
+        className="w-full fixed top-0 left-0 shadow-md z-10 md:px-5 px-0"
+        style={{ backgroundColor: "#f7f7f7" }}
+      >
+        <div
+          className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7"
+          style={{ backgroundColor: "#f7f7f7" }}
+        >
           <div className="font-bold text-2xl cursor-pointer flex items-center text-gray-800">
             <span className="text-3xl mr-1 pt-2"> Newschain</span>
           </div>
@@ -43,7 +49,8 @@ const NavBar = () => {
           <ul
             className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 mx-0 transition-all duration-500 ease-in ${
               open ? "top-20 " : "top-[-490px]"
-            }`}
+            } md:px-0 px-8`}
+            style={{ backgroundColor: "#f7f7f7" }}
           >
             {Links.map((link) => (
               <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">

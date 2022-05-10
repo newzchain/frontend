@@ -7,7 +7,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: "#f7f7f7" }}>
       <NavBar />
       <Routes>
         <Route path="/" element={<LandingPage />} exact />
