@@ -9,6 +9,7 @@ const NavBar = () => {
     { name: "ETHEREUM", link: "/" },
     { name: "BLOCKCHAIN", link: "/" },
     { name: "ABOUT US", link: "/" },
+    { name: "CREATE", link: "/create" },
   ];
   let [open, setOpen] = useState(false);
 
