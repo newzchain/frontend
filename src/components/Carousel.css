@@ -1,0 +1,26 @@
+.carousel {
+  display: inline-flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.img_container {
+  height: 600px;
+}
+.content_div {
+  padding-left: 10%;
+  padding-top: 16%;
+}
+@media screen and (max-width: 900px) {
+  .img_container {
+    height: auto;
+  }
+  .content_div {
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 18%;
+  }
+}

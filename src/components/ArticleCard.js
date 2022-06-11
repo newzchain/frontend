@@ -5,7 +5,7 @@ const ArticleCard = () => {
     <>
       <div className="flex md:flex-row justify-between mt-4">
         <div className="w-3/4 mr-4">
-          <h2 className="text-left text-xl hover:underline">
+          <h2 className="text-left text-xl font-bold hover:underline">
             The Holcim Dilemmadas. An Explainer on why Holcim may be exiting
             India.
           </h2>

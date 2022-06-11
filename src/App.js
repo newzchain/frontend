@@ -5,6 +5,7 @@ import CreatorsPage from "./pages/CreatorsPage";
 import NavBar from "./components/NavBar.js";
 
 import "./App.css";
+import ProfilePage from "./pages/ProfilePage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} exact />
         <Route path="/create" element={<CreatorsPage />} exact />
+        <Route path="/profile" element={<ProfilePage />} exact />
       </Routes>
     </div>
   );

@@ -54,10 +54,10 @@ const NavBar = () => {
             style={{ backgroundColor: "#f7f7f7" }}
           >
             {Links.map((link) => (
-              <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
+              <li key={link.name} className="md:ml-4 text-md md:my-0 my-7">
                 <a
                   href={link.link}
-                  className="text-gray-800 hover:text-gray-400 duration-500"
+                  className="text-md font-bold text-gray-800 hover:text-gray-400 duration-500"
                 >
                   {link.name}
                 </a>
